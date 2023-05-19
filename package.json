@@ -1,0 +1,33 @@
+{
+  "name": "console_lib",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "module": "es/index.js",
+  "dependencies": {
+    "vite": "^4.3.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev":"vite",
+    "build":"vite build"
+  },
+  "files": [
+    "lib",
+    "es",
+    "README",
+    "LICENSE"
+  ],
+  "husky":{
+    "hooks":{
+      "pre-commit":"lint-staged"
+    }
+  },
+  "keywords": [
+    "console",
+    "log",
+    "button"
+  ]
+}
